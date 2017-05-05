@@ -19,6 +19,7 @@ RUN apt-get update --fix-missing && apt-get install -y \
 	nodejs \
 	ruby-full
 
+RUN gem install bundler
 
 RUN curl -LO https://deployer.org/deployer.phar && mv deployer.phar /usr/local/bin/dep && chmod +x /usr/local/bin/dep
 
